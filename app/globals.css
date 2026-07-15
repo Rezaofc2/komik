@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  color-scheme: dark;
+  --background: #0f0f0f;
+  --foreground: #e4e4e7;
+  --primary: #3b82f6;
+  --primary-foreground: #0f0f0f;
+  --secondary: #8b5cf6;
+  --secondary-foreground: #e4e4e7;
+  --accent: #3b82f6;
+  --accent-foreground: #0f0f0f;
+  --muted: #27272a;
+  --muted-foreground: #a1a1a1;
+  --card: #18181b;
+  --card-foreground: #e4e4e7;
+  --popover: #18181b;
+  --popover-foreground: #e4e4e7;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+  --chart-1: #3b82f6;
+  --chart-2: #8b5cf6;
+  --chart-3: #ec4899;
+  --chart-4: #f59e0b;
+  --chart-5: #10b981;
+  --sidebar: #18181b;
+  --sidebar-foreground: #e4e4e7;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #0f0f0f;
+  --sidebar-accent: #8b5cf6;
+  --sidebar-accent-foreground: #e4e4e7;
+  --sidebar-border: #27272a;
+  --sidebar-ring: #3b82f6;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #e4e4e7;
+}
+
+* {
+  @apply border-neutral-800;
+}
+
+button {
+  @apply transition-colors;
+}
+
+a {
+  @apply hover:opacity-80 transition-opacity;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
